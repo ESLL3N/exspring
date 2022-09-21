@@ -20,5 +20,9 @@ public class GeneroController {
         model.addAttribute("generos", this.generosRepo.findAll());
         return "list";
     }
+    
+    @RequestMapping("insert")
+    public String insert() {
+        return "insert";
+    }
 }
-

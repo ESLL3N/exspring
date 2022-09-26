@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,8 +17,8 @@
         </tr>
         <c:forEach var="g" items="${generos}">
             <tr>
-                <th>${g.id}</th>
-                <th>${g.nome}</th>
+                <td>${g.id}</td>
+                <td>${g.nome}</td>
             </tr>
         </c:forEach>
     </table>
